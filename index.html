@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main id="main" aria-label="main">
+        <section id="contact" aria-label="contact">
+            <div class="container">
+                <aside aria-label="aside">
+                    <h2>Contact information</h2>
+                    <p>How can we help?</p>
+                    <div class="info">
+                        <article aria-label="article">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                            <div class="details">
+                                <h3>Email</h3>
+                                <p>info@xyz.com</p>
+                            </div>
+                        </article>
+                        <article aria-label="article">
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <div class="details">
+                                <h3>Location</h3>
+                                <p>123 Lucky Street</p>
+                                <p>Atlanta, Georgia</p>
+                            </div>
+                        </article>
+                       <article aria-label="article">
+                            <i class="fa-solid fa-phone fa-lg"></i>
+                            <div class="details">
+                                <h3>Telephone</h3>
+                                <p>Weekdays 8am-5pm</p>
+                                <p>(404) 000-0001</p>
+                            </div>
+                        </article> 
+                    </div>
+                </aside>
+                <form action="form" aria-label="form">
+                    <label for="contact-form"><h2>Contact Form</h2></label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                    <input id="email" type="email" placeholder="Enter valid email" required>
+                    <textarea name="message" placeholder="message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>  
+    </main>
+</body>
+</html>

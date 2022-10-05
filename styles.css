@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #fca311;
+    --color-secondary: #14213d;
+    --color-tertiary: #e5e5e5;
+    --color-black:#000000;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--color-white);
+    padding: 6rem 0 0;
+    min-width: 100vw;
+    min-height: 100vh; 
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+}
+
+section[id="contact"] .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+section[id="contact"] aside {
+    background-color: var(--color-primary);
+    padding: 2rem;
+    font-size: 1rem;
+    color: var(--color-secondary); 
+    border-radius: 0.5rem; 
+
+}
+
+section[id="contact"] aside h2{
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section[id="contact"] article {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+label[for="contact-form"] {
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+section[id="contact"] form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section[id="contact"] form input, textarea {
+    padding: 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+}
+
+section[id="contact"] textarea {
+    max-height: 10rem;
+}
+
+section[id="contact"] input::placeholder, textarea::placeholder{
+    color: var(--color-secondary);
+}
+
+section[id="contact"] input:focus{
+    background-color: var(--color-black);
+}
+
+section[id="contact"] textarea:focus {
+
+    background-color: var(--color-black);
+}
+
+
+button[type="submit"]{
+    padding: 1rem;
+    background-color:transparent;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    cursor: pointer;
+    transition: 300ms;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+section[id="contact"] .btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+}
+
+/* MEDIA QUERIES FOR PHONES */
+@media screen and (max-width: 600px){
+    section[id="contact"] .container {
+        grid-template-columns: 1fr;
+    }  
+}
